@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticket Management System</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-img">
+      <div class="ticket-section">
+        <form id="ticket-form" class="ticket-form">
+          <h2>🎟️ Ticket Management System</h2>
+          <input type="text" id="name" placeholder="Enter Your Name" required />
+          <input type="text" id="seat" placeholder="Enter Seat No." required />
+          <input type="date" id="date" required />
+          <input type="text" id="from" placeholder="From Location" required />
+          <input type="text" id="to" placeholder="To Location" required />
+          <input type="submit" value="Book Ticket" class="book-btn" />
+        </form>
+        <button id="view-history-btn" class="history-btn">
+          📜 View Ticket History
+        </button>
+      </div>
+    </div>
+
+    <div id="ticket-history" class="ticket-history">
+      <h3>📌 Ticket History</h3>
+      <table id="history-table">
+        <thead>
+          <tr>
+            <th>Ticket ID</th>
+            <th>Name</th>
+            <th>Seat No</th>
+            <th>Date</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="history-table-body">
+          <!-- Tickets will appear here -->
+        </tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
